@@ -133,7 +133,7 @@ def solve_daily_vrp(gun):
                 f"FlowOut_{j}_{k}")
 
     # =================================================================
-    # İKİ-MALLAR AKIŞ KISITLARI (subtour elimination)
+    # TEK-MALLAR AKIŞ KISITLARI (subtour elimination)
     # =================================================================
     for k in K:
         model.addConstr(
@@ -258,7 +258,7 @@ def solve_daily_vrp(gun):
         print(f"❌ {gun} için çözüm bulunamadı.")
 
 # ==========================================
-# ÇALIŞTIRMA (TÜM HAFTA İÇİN PERİYODİK ÇÖZÜM)
+# ÇALIŞTIRMA (TÜM HAFTA İÇİN ÇÖZÜM)
 # ==========================================
 print("\n" + "🚀"*15)
 print("HAFTALIK PERİYODİK ÇÖZÜM BAŞLATILIYOR")
